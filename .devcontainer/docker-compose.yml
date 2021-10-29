@@ -34,4 +34,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: masterdba
     volumes:
-      - ../database:/var/lib/mysql
+      - ../databases:/var/lib/mysql
