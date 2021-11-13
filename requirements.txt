@@ -1,2 +1,2 @@
 PyMySQL
-pycrypto
+pycryptodome
