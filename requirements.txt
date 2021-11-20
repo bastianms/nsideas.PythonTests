@@ -1,3 +1,4 @@
 PyMySQL
 pycryptodome
 mysql.connector
+python-decouple

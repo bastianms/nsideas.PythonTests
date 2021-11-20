@@ -1,13 +1,15 @@
 import mysql.connector
+from decouple import config
 
-class MySQLDataBase:
-    def __init__(self, host = '', username = '', password = '', database_name = '') -> None:
+class DataBase:
+    def __init__(self, host = config('host'), username = config('username'), password = config('password'), database_name = config('database_name')) -> None:
         self.__host = host
         self.__username = username
         self.__password = password
         self.__database_name = database_name
         self.__connection = None
         self.__cursor = None
+        print(host)
 
     def Open(self):
         self.__connection = mysql.connector.connect(
