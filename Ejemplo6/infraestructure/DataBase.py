@@ -9,7 +9,6 @@ class DataBase:
         self.__database_name = database_name
         self.__connection = None
         self.__cursor = None
-        print(host)
 
     def Open(self):
         self.__connection = mysql.connector.connect(
