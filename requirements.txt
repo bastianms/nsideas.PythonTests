@@ -3,3 +3,4 @@ pycryptodome
 mysql.connector
 python-decouple
 Flask
+tk
